@@ -1,0 +1,27 @@
+AI Usage Log - Questions 
+
+
+• what do I need to do for offline image caching?
+• Make the successful visit_landmark path persist the job into queued_visits and register a one-off WorkManager task.
+• When will the job become done?
+• When will the activity page show result?
+• Landmarks page should show all the landmarks fetched from the API.
+• Make the Min score control more explicit by labeling it as an optional filter instead of a default behavior.
+• Make the markers of landmarks in map page follow these rules — Marker color should reflect score (low → high).
+• Can you tell me why all the scores for the landmarks are in negative?
+• I want to upload this project to my GitHub account. Which files should I upload?
+• Is the create landmark button working properly?
+• is the pictures size above 2 mb?
+• When I write the title, getting the latitude and longitude from the use current GPS button, and take a picture from the phone, then clicking create landmark is not creating a new landmark. Solve this problem.
+• Add a small loading spinner while the request is in progress so the user knows the create action is actually running.
+• Also add a tiny “Submitting…” label beside the spinner so it is even clearer on mobile.
+• Add waring when create landmark is not successful
+• Clicking the create landmark shows submitting but it failed to create a landmark and showed the warning. Why did it fail to create landmark?
+• Inspect the exact server response format and patch the app to accept the server’s real success payload.
+• For soft delete which approach will be best
+• why the Soft delete is not working?
+• Add a trash can icon beside the down arrow at the top. Pressing the trash can icon should show all the soft deleted landmarks with a button to restore them.
+• Trash can looses the deleted landmarks after a few seconds. Why is this happening?
+• After soft deleting a landmark it is not removing from the landmarks page. what is the problem?
+• Create a memory file for this project so that i can see what has been done to this project.
+• Create a physical memory file in the midterm_project folder so I can see the memory file.
