@@ -18,6 +18,20 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
+  Color _scoreToMarkerColor(double score) {
+    if (score <= 0) return Colors.red;
+    if (score < 5) {
+      final ratio = (score / 5.0).clamp(0.0, 1.0);
+      return Color.lerp(Colors.red, Colors.yellow, ratio)!;
+    }
+    if (score == 5) return Colors.yellow;
+    if (score < 10) {
+      final ratio = ((score - 5) / 5.0).clamp(0.0, 1.0);
+      return Color.lerp(Colors.yellow, Colors.green, ratio)!;
+    }
+    return Colors.green;
+  }
+
   @override
   void initState() {
     super.initState();
@@ -83,9 +97,7 @@ class _MapPageState extends State<MapPage> {
     final api = Provider.of<ApiService>(context);
     final markers = api.landmarks.map((l) {
       final img = l.image;
-      // color marker based on score: low scores are red, higher scores move toward green
-      final t = (l.score / 100.0).clamp(0.0, 1.0);
-      final markerColor = Color.lerp(Colors.red, Colors.green, t)!;
+      final markerColor = _scoreToMarkerColor(l.score);
 
       return Marker(
         width: 40,

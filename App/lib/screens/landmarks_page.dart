@@ -85,7 +85,7 @@ class _LandmarksPageState extends State<LandmarksPage> {
                   height: 320,
                   child: ListView.separated(
                     itemCount: deleted.length,
-                    separatorBuilder: (_, __) => const Divider(height: 1),
+                    separatorBuilder: (_, _) => const Divider(height: 1),
                     itemBuilder: (ctx, i) {
                       final l = deleted[i];
                       return ListTile(
