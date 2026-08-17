@@ -25,3 +25,4 @@ AI Usage Log - Questions
 • After soft deleting a landmark it is not removing from the landmarks page. what is the problem?
 • Create a memory file for this project so that i can see what has been done to this project.
 • Create a physical memory file in the midterm_project folder so I can see the memory file.
+• Create the README.txt file according to the given specification.
